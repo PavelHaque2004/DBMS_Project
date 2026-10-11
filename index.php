@@ -14,7 +14,7 @@
 
 <div class="container">
 
-    <h1>Student Information Form</h1>
+    <h1>CSTU Student Information Form</h1>
 
     <form action="save.php" method="POST"
           enctype="multipart/form-data"
