@@ -3,14 +3,13 @@
 
 include "db.php";
 
-// Check Student ID
 if (!isset($_GET["student_id"]) || empty(trim($_GET["student_id"]))) {
     die("Student ID is required.");
 }
 
 $student_id = trim($_GET["student_id"]);
 
-// Search student using prepared statement
+
 $stmt = $conn->prepare(
     "SELECT * FROM students WHERE student_id = ?"
 );
@@ -119,7 +118,7 @@ $result = $stmt->get_result();
 
         $row = $result->fetch_assoc();
 
-        // Calculate Age
+       
         $age = "N/A";
 
         if (!empty($row["birth_date"]) &&
@@ -166,7 +165,6 @@ $result = $stmt->get_result();
 
                 <tr>
 
-                    <!-- Student Image -->
                     <td>
 
                         <?php
@@ -198,14 +196,14 @@ $result = $stmt->get_result();
 
                     </td>
 
-                    <!-- Student ID -->
+                
                     <td>
                         <?php
                         echo htmlspecialchars($row["student_id"]);
                         ?>
                     </td>
 
-                    <!-- Student Name -->
+             
                     <td>
                         <?php
 
@@ -220,63 +218,62 @@ $result = $stmt->get_result();
                         ?>
                     </td>
 
-                    <!-- Department -->
+                 
                     <td>
                         <?php
                         echo htmlspecialchars($row["department"] ?? "");
                         ?>
                     </td>
 
-                    <!-- Batch -->
+               
                     <td>
                         <?php
                         echo htmlspecialchars($row["batch"] ?? "");
                         ?>
                     </td>
 
-                    <!-- Year -->
+                  
                     <td>
                         <?php
                         echo htmlspecialchars((string)($row["year"] ?? ""));
                         ?>
                     </td>
 
-                    <!-- Semester -->
+               
                     <td>
                         <?php
                         echo htmlspecialchars((string)($row["semester"] ?? ""));
                         ?>
                     </td>
 
-                    <!-- Email -->
+                   
                     <td>
                         <?php
                         echo htmlspecialchars($row["email"] ?? "");
                         ?>
                     </td>
 
-                    <!-- Phone -->
                     <td>
                         <?php
                         echo htmlspecialchars($row["phone"] ?? "");
                         ?>
                     </td>
 
-                    <!-- Gender -->
+               
                     <td>
                         <?php
                         echo htmlspecialchars($row["gender"] ?? "");
                         ?>
                     </td>
 
-                    <!-- Birth Date -->
+                 
                     <td>
                         <?php
                         echo htmlspecialchars($row["birth_date"] ?? "");
                         ?>
                     </td>
 
-                    <!-- Age -->
+               
                     <td>
                         <?php
                         echo htmlspecialchars((string)$age);
