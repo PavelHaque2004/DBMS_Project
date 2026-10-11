@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $birth_date = $_POST["birth_date"];
 
 
-    // Clubs
+    
     if (isset($_POST["clubs"])) {
         $clubs = implode(", ", $_POST["clubs"]);
     } else {
@@ -30,9 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
-    // =========================
-    // Image Upload
-    // =========================
 
     $imageName = "";
 
@@ -50,9 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
-    // =========================
-    // Check Duplicate Student ID
-    // =========================
+    
 
     $check = $conn->prepare(
         "SELECT student_id FROM students WHERE student_id = ?"
@@ -71,9 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
-    // =========================
-    // Insert Student
-    // =========================
+   
 
     $sql = "INSERT INTO students
             (

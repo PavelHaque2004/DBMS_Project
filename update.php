@@ -38,7 +38,7 @@ if (isset($_POST["clubs"])) {
 }
 
 
-/* Get old image */
+
 
 $stmt = $conn->prepare(
     "SELECT image FROM students WHERE student_id = ?"
@@ -61,7 +61,7 @@ $oldData = $result->fetch_assoc();
 $imageName = $oldData["image"];
 
 
-/* New image */
+
 
 if (isset($_FILES["image"]) &&
     $_FILES["image"]["error"] == 0) {
@@ -78,7 +78,7 @@ if (isset($_FILES["image"]) &&
         $target
     )) {
 
-        /* Delete old image */
+       
 
         if (!empty($imageName) &&
             file_exists("uploads/" . $imageName)) {
@@ -94,7 +94,7 @@ if (isset($_FILES["image"]) &&
 }
 
 
-/* Update student */
+
 
 $sql = "UPDATE students SET
 

@@ -32,7 +32,7 @@ $result = $conn->query($sql);
     <h1>All Student Information</h1>
 
 
-    <!-- Search -->
+    
 
     <form action="search.php"
           method="GET"
@@ -52,7 +52,7 @@ $result = $conn->query($sql);
     </form>
 
 
-    <!-- Add Student -->
+   
 
     <a href="index.php"
        class="add-btn">
@@ -107,7 +107,7 @@ $result = $conn->query($sql);
                 <tr>
 
 
-                    <!-- Image -->
+                    
 
                     <td>
 
@@ -143,7 +143,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Student ID -->
+                    
 
                     <td>
 
@@ -158,7 +158,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Name -->
+                    
 
                     <td>
 
@@ -178,7 +178,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Department -->
+                    
 
                     <td>
 
@@ -193,7 +193,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Batch -->
+                    
 
                     <td>
 
@@ -208,7 +208,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Year -->
+                    
 
                     <td>
 
@@ -223,7 +223,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Semester -->
+                    
 
                     <td>
 
@@ -238,7 +238,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Email -->
+                   
 
                     <td>
 
@@ -253,7 +253,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Phone -->
+                    
 
                     <td>
 
@@ -268,7 +268,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Gender -->
+                   
 
                     <td>
 
@@ -283,7 +283,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Clubs -->
+                   
 
                     <td>
 
@@ -298,7 +298,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Birth Date -->
+                  
 
                     <td>
 
@@ -313,7 +313,7 @@ $result = $conn->query($sql);
                     </td>
 
 
-                    <!-- Age -->
+                 
 
                     <td>
 

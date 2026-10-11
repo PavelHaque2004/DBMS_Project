@@ -20,34 +20,32 @@
           enctype="multipart/form-data"
           onsubmit="return validateForm()">
 
-        <!-- First Name -->
+       
         <label>First Name</label>
         <input type="text" name="first_name" required>
 
-        <!-- Middle Name -->
+      
         <label>Middle Name (Optional)</label>
         <input type="text" name="middle_name">
 
-        <!-- Last Name -->
+       
         <label>Last Name</label>
         <input type="text" name="last_name" required>
 
-        <!-- Student ID -->
+       
         <label>Student ID</label>
         <input type="text" name="student_id" required>
 
-        <!-- Department -->
+        
         <label>Department</label>
         <select name="department" required>
             <option value="">Select Department</option>
             <option value="ICT">ICT</option>
             <option value="CSE">CSE</option>
-            <option value="EEE">EEE</option>
-            <option value="BBA">BBA</option>
-            <option value="English">English</option>
+           <option value="BBA">BBA</option>
         </select>
 
-        <!-- Batch -->
+        
         <label>Batch</label>
         <select name="batch" required>
             <option value="">Select Batch</option>
@@ -58,7 +56,7 @@
             <option value="5th">5th</option>
         </select>
 
-        <!-- Year -->
+       
         <label>Year</label>
         <select name="year" required>
             <option value="">Select Year</option>
@@ -68,7 +66,7 @@
             <option value="4th Year">4th Year</option>
         </select>
 
-        <!-- Semester -->
+        
         <label>Semester</label>
         <select name="semester" required>
             <option value="">Select Semester</option>
@@ -76,19 +74,19 @@
             <option value="2nd Semester">2nd Semester</option>
         </select>
 
-        <!-- Address -->
+        
         <label>Address</label>
         <textarea name="address" rows="4"></textarea>
 
-        <!-- Email -->
+        
         <label>Email</label>
         <input type="email" name="email" required>
 
-        <!-- Phone -->
+        
         <label>Phone Number</label>
         <input type="tel" name="phone" required>
 
-        <!-- Gender -->
+        
         <label>Gender</label>
 
         <div class="radio-group">
@@ -110,7 +108,7 @@
 
         </div>
 
-        <!-- Club Membership -->
+       
         <label>Club Membership</label>
 
         <div class="checkbox-group">
@@ -147,15 +145,15 @@
 
         </div>
 
-        <!-- Image -->
+        
         <label>Student Image</label>
         <input type="file" name="image" accept="image/*" required>
 
-        <!-- Birth Date -->
+       
         <label>Birth Date</label>
         <input type="date" name="birth_date" required>
 
-        <!-- Captcha -->
+        
         <label>Captcha</label>
 
         <div class="captcha-box">
@@ -167,7 +165,7 @@
                placeholder="Enter Captcha"
                required>
 
-        <!-- Terms -->
+       
         <div class="terms">
 
             <label>
@@ -177,7 +175,7 @@
 
         </div>
 
-        <!-- Submit -->
+        
         <button type="submit" class="submit-btn">
             Submit
         </button>

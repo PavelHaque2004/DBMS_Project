@@ -80,36 +80,27 @@ $clubs = explode(", ", $row["clubs"]);
        disabled>
 
 
-<label>Department</label>
 
-<select name="department" required>
+        <label>Department</label>
 
-<option value="ICT"
-<?php if ($row["department"]=="ICT") echo "selected"; ?>>
-ICT
-</option>
+        <select name="department" required>
 
-<option value="CSE"
-<?php if ($row["department"]=="CSE") echo "selected"; ?>>
-CSE
-</option>
+            <option value="ICT"
+                <?php if ($row["department"] == "ICT") echo "selected"; ?>>
+                ICT
+            </option>
 
-<option value="EEE"
-<?php if ($row["department"]=="EEE") echo "selected"; ?>>
-EEE
-</option>
+            <option value="CSE"
+                <?php if ($row["department"] == "CSE") echo "selected"; ?>>
+                CSE
+            </option>
 
-<option value="BBA"
-<?php if ($row["department"]=="BBA") echo "selected"; ?>>
-BBA
-</option>
+            <option value="BBA"
+                <?php if ($row["department"] == "BBA") echo "selected"; ?>>
+                BBA
+            </option>
 
-<option value="English"
-<?php if ($row["department"]=="English") echo "selected"; ?>>
-English
-</option>
-
-</select>
+        </select>
 
 
 <label>Batch</label>
